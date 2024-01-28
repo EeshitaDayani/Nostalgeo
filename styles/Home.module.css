@@ -1,8 +1,37 @@
-.main {
+.container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
+  height: 100vh;
+  background-color: #F9EFDB; /* Beige background */
+  color: #9DBC98;
 }
+
+.heading {
+  text-align: center;
+  font-size: 32px; /* Increased font size */
+  margin-bottom: 20px;
+}
+
+.custombutton {
+  padding: 15px 30px; /* Larger button size */
+  background-color: #F9EFDB; /* Blue button color */
+  color: #638889; /* White text color */
+  border: 2px solid #9DBC98;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px; /* Larger button text */
+  margin-bottom: 20px;
+}
+
+.result {
+  text-align: center;
+}
+
+.result h2 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+/* Add more styles as needed */
