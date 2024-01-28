@@ -4,34 +4,46 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #F9EFDB; /* Beige background */
+  background-color: #F9EFDB; 
   color: #9DBC98;
+}
+
+.title {
+  text-align: center;
+  font-size: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: #638889; 
+  padding: 20px;
+  z-index: 10; 
 }
 
 .heading {
   text-align: center;
-  font-size: 32px; /* Increased font size */
-  margin-bottom: 20px;
+  font-size: 32px; 
+  margin-bottom: 30px;
 }
 
 .custombutton {
-  padding: 15px 30px; /* Larger button size */
-  background-color: #F9EFDB; /* Blue button color */
-  color: #638889; /* White text color */
+  padding: 15px 30px; 
+  background-color: #F9EFDB; 
+  color: #638889; 
   border: 2px solid #9DBC98;
   border-radius: 10px;
   cursor: pointer;
-  font-size: 18px; /* Larger button text */
-  margin-bottom: 20px;
+  font-size: 18px; 
+  margin-bottom: 30px;
 }
 
 .result {
   text-align: center;
-}
-
-.result h2 {
-  font-size: 20px;
+  font-size: 30px;
   margin-top: 20px;
 }
 
-/* Add more styles as needed */
+.resultText {
+  margin-bottom: 30px;
+}
+

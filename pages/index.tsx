@@ -3,6 +3,7 @@ import styles from "@/styles/Home.module.css";
 import React, { useState } from "react";
 import { findMatches, MatchResult } from "../public/helper";
 import { SampleData, UserData } from "../public/users";
+import Router from "next/router";
 
 const currentUserId = 12345;
 
@@ -27,6 +28,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main className={styles.container}>
+        <div className={styles.title}>Nostalgeo</div>
         <div
           className={styles.heading}
         >{`Hello, Shriya! Explore core memories from your past.`}</div>
@@ -36,7 +38,15 @@ export default function Home() {
         <div className={styles.result}>
           {buttonClicked && result ? (
             <div>
-              <h2>{`A connection found! ${result.matchedUserName} shares a similar memory: ${result.matchedMemory}`}</h2>
+              <div
+                className={styles.resultText}
+              >{`A connection found! ${result.matchedUserName} shares a similar memory: ${result.matchedMemory}`}</div>
+              <button
+                className={styles.custombutton}
+                onClick={() => Router.push("/chat")}
+              >
+                Chat with {result.matchedUserName}
+              </button>
             </div>
           ) : null}
           {buttonClicked && !result ? (
