@@ -20,7 +20,7 @@ const contacts: Contact[] = [
 ];
 
 const messages: Message[] = [
-  { id: 1, senderId: 1, text: "Hey Shriya! I happened to notice you're in the same city as me right now, and I couldn't let the opportunity pass without saying hi. Let me know if you're free!", isSender: false },
+  { id: 1, senderId: 1, text: "Hey Shriya! I happened to notice you're in the same city as me right now. I loved working with you at UofTHacks. Let's catch up!", isSender: false },
   {
     id: 2,
     senderId: 2,
