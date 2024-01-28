@@ -5,7 +5,7 @@
   align-items: center;
   height: 100vh;
   background-color: #F9EFDB; 
-  color: #9DBC98;
+  color: #638889;
 }
 
 .title {
@@ -18,11 +18,12 @@
   color: #638889; 
   padding: 20px;
   z-index: 10; 
+  border-bottom: 1px solid #9DBC98;
 }
 
 .heading {
   text-align: center;
-  font-size: 32px; 
+  font-size: 40px; 
   margin-bottom: 30px;
 }
 

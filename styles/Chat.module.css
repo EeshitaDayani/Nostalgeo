@@ -19,6 +19,11 @@
   margin: 30px 0px 0px 80px;
 }
 
+.startMsg {
+  font-size: larger;
+  padding: 250px;
+}
+
 .contacts {
   flex: 1;
   padding: 20px;
@@ -48,8 +53,7 @@
   padding: 20px;
   font-size: larger;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
 }
 
 .chat h2 {
@@ -59,37 +63,54 @@
 .messages {
   max-height: 400px;
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .messageReceived {
+  align-self: flex-start;
   padding: 10px;
-  margin-bottom: 5px;
-  margin-bottom: auto;
+  margin-bottom: 7px;
   border-radius: 15px 15px 15px 0px;
   border: 2px solid #9dbc98;
   max-width: 200px;
-  position: relative;
-  left: 0;
 }
 
-/* Add styles for sent messages */
+.messageSent {
+  align-self: flex-end; 
+  padding: 10px;
+  margin-bottom: 7px;
+  border-radius: 15px 15px 0px 15px;
+  border: 2px solid #9dbc98;
+  max-width: 200px;
+}
 
-/* form {
-    display: flex;
-    margin-top: 20px;
-  }
-  
-  input {
-    flex: 1;
-    padding: 10px;
-  }
-  
-  button {
-    padding: 10px;
-    margin-left: 10px;
-    background-color: #4caf50;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  } */
+.messageInput {
+  align-self: flex-end;
+  display: flex;
+  margin-top: auto;
+  min-width: 800px;
+}
+
+.messageInput input {
+  background-color: #f8f2e7;
+  border: transparent;
+  outline: 0;
+  border-radius: 7px;
+  border: 2px solid #9dbc98;
+  font-size: large;
+  min-width: 200px;
+  color: #638889;
+  padding: 4px;
+  flex: 1;
+}
+
+.messageInput button {
+  padding: 10px;
+  margin-left: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

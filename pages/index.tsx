@@ -29,9 +29,9 @@ export default function Home() {
       </Head>
       <main className={styles.container}>
         <div className={styles.title}>Nostalgeo</div>
-        <div
-          className={styles.heading}
-        >{`Hello, Shriya! Explore core memories from your past.`}</div>
+        <div className={styles.heading}>
+          Welcome, Shriya! <br /> Explore core memories from your past.
+        </div>
         <button className={styles.custombutton} onClick={handleCheckButton}>
           Discover Connections
         </button>
@@ -40,7 +40,7 @@ export default function Home() {
             <div>
               <div
                 className={styles.resultText}
-              >{`A connection found! ${result.matchedUserName} shares a similar memory: ${result.matchedMemory}`}</div>
+              >{`Connection found! ${result.matchedUserName} shares a similar memory: ${result.matchedMemory}`}</div>
               <button
                 className={styles.custombutton}
                 onClick={() => Router.push("/chat")}
