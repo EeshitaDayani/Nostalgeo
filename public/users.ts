@@ -1,4 +1,4 @@
-type Event = {
+export type Event = {
   description: string;
   startYear: number;
   endYear: number;

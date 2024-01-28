@@ -2,7 +2,7 @@ import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 import React, { useState } from "react";
 import { findMatches, MatchResult } from "../public/helper";
-import { SampleData, UserData } from "../public/users";
+import { SampleData, UserData, Event } from "../public/users";
 import Router from "next/router";
 
 const currentUserId = 12345;
@@ -16,6 +16,13 @@ export default function Home() {
     setResult(matchesResult);
     setButtonClicked(true);
   };
+
+  const getUserMemories = (userId: number): Event[] => {
+    const user = SampleData.find((user) => user.userId === userId);
+    return user ? user.events : [];
+  };
+
+  console.log(getUserMemories(currentUserId));
 
   return (
     <>
