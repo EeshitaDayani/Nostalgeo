@@ -18,14 +18,19 @@ export const SampleData: UserData[] = [
     geohash: "abcd",
     events: [
       {
-        description: "Went to Jefferson High School",
-        startYear: 1987,
-        endYear: 1989,
-      },
-      {
         description: "I was a hacker at UofTHacks 11",
         startYear: 2023,
         endYear: 2023,
+      },
+      {
+        description: "Went to Jefferson High School",
+        startYear: 2015,
+        endYear: 2017,
+      },
+      {
+        description: "Participated in CBS Basketball Nationals in U17 Girls",
+        startYear: 2014,
+        endYear: 2014,
       },
     ],
   },

@@ -17,10 +17,16 @@ export default function Home() {
     setButtonClicked(true);
   };
 
-  const getUserMemories = (userId: number): Event[] => {
-    const user = SampleData.find((user) => user.userId === userId);
-    return user ? user.events : [];
-  };
+  function getUserMemories(userId: number): (string | number)[][] {
+    const user = SampleData.find((user) => user.userId === userId) || {
+      events: [],
+    };
+    let flatMemories = [];
+    for (const ev of user.events) {
+      flatMemories.push([ev.description, ev.startYear, ev.endYear]);
+    }
+    return flatMemories;
+  }
 
   return (
     <>
@@ -56,9 +62,30 @@ export default function Home() {
           ) : null}
           {buttonClicked && !result ? (
             <div>
-              <h2>No connections found at the moment.</h2>
+              <h3>No connections found at the moment.</h3>
             </div>
           ) : null}
+        </div>
+        <div className={styles.tableContainer}>
+          <div className={styles.memoryTitle}>Recorded Memories</div>
+          <table className={styles.memoryTable}>
+            <thead>
+              <tr>
+                <th>Memory</th>
+                <th>Start Year</th>
+                <th>End Year</th>
+              </tr>
+            </thead>
+            <tbody>
+              {getUserMemories(currentUserId).map((memory, index) => (
+                <tr key={index}>
+                  <td>{memory[0]}</td>
+                  <td>{memory[1]}</td>
+                  <td>{memory[2]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </main>
     </>

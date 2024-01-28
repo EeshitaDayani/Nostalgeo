@@ -48,3 +48,27 @@
   margin-bottom: 30px;
 }
 
+.tableContainer {
+  margin-top: 20px; /* Adjust as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.memoryTable {
+  width: 80%; /* Adjust as needed */
+  margin-top: 10px; /* Adjust as needed */
+  border-collapse: collapse;
+}
+
+.memoryTable th, .memoryTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  font-size: larger;
+}
+
+.memoryTitle {
+  font-size: 2.2rem; /* Adjust as needed */
+  margin-bottom: 10px; /* Adjust as needed */
+}

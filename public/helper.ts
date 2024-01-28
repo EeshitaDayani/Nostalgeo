@@ -49,7 +49,7 @@ export function findMatches(
                 if (data.score > 65) {
                   return {
                     matchedUserName: otherUser.userName,
-                    matchedMemory: currentMemory.description,
+                    matchedMemory: otherMemory.description,
                   };
                 }
               })
@@ -59,7 +59,7 @@ export function findMatches(
 
             return {
               matchedUserName: otherUser.userName,
-              matchedMemory: currentMemory.description,
+              matchedMemory: otherMemory.description,
             };
           }
         }
