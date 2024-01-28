@@ -1,0 +1,95 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  height: 80vh;
+  background-color: #f9efdb;
+  color: #638889;
+  border: 2px solid #9dbc98;
+  border-radius: 30px;
+  margin: 30px 70px 70px 70px;
+}
+
+.custombutton {
+  background-color: #F9EFDB; 
+  color: #638889; 
+  cursor: pointer;
+  font-size: 20px; 
+  border: 0px;
+  border-bottom: 1px solid #638889;
+  margin: 30px 0px 0px 80px;
+}
+
+.contacts {
+  flex: 1;
+  padding: 20px;
+  border-right: 1px solid #ccc;
+  font-size: larger;
+}
+
+.contacts h2 {
+  margin-bottom: 10px;
+}
+
+.contacts ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contacts li {
+  padding: 10px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  border-bottom: 2px solid #ccc;
+}
+
+.chat {
+  flex: 3;
+  padding: 20px;
+  font-size: larger;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat h2 {
+  margin-bottom: 10px;
+}
+
+.messages {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.messageReceived {
+  padding: 10px;
+  margin-bottom: 5px;
+  margin-bottom: auto;
+  border-radius: 15px 15px 15px 0px;
+  border: 2px solid #9dbc98;
+  max-width: 200px;
+  position: relative;
+  left: 0;
+}
+
+/* Add styles for sent messages */
+
+/* form {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  input {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  button {
+    padding: 10px;
+    margin-left: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  } */
