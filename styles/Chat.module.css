@@ -1,38 +1,41 @@
 .container {
   display: flex;
+  font-family: 'Courier New', Courier, monospace;
   justify-content: space-between;
   height: 80vh;
-  background-color: #f9efdb;
-  color: #638889;
-  border: 2px solid #9dbc98;
+  background-color: #fff5eb;
+  color: #947456;
+  border: 2px solid #e3cab1;
   border-radius: 30px;
   margin: 30px 70px 70px 70px;
 }
 
 .custombutton {
-  background-color: #F9EFDB; 
-  color: #638889; 
+  background-color: #fff5eb; 
+  font-family: 'Courier New', Courier, monospace;
+  color: #947456; 
   cursor: pointer;
   font-size: 20px; 
   border: 0px;
-  border-bottom: 1px solid #638889;
+  border-bottom: 1px solid #e3cab1;
   margin: 30px 0px 0px 80px;
 }
 
 .startMsg {
-  font-size: larger;
-  padding: 250px;
+  color: #b5997d;
+  padding: 280px;
+  font-weight: 600;
 }
 
 .contacts {
   flex: 1;
   padding: 20px;
-  border-right: 1px solid #ccc;
+  border-right: 1px solid #e3cab1;
   font-size: larger;
 }
 
 .contacts h2 {
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 
 .contacts ul {
@@ -45,7 +48,7 @@
   padding: 10px;
   cursor: pointer;
   margin-bottom: 5px;
-  border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid #e3cab1;
 }
 
 .chat {
@@ -61,7 +64,7 @@
 }
 
 .messages {
-  max-height: 400px;
+  max-height: 700px;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
@@ -72,8 +75,8 @@
   padding: 10px;
   margin-bottom: 7px;
   border-radius: 15px 15px 15px 0px;
-  border: 2px solid #9dbc98;
-  max-width: 200px;
+  border: 2px solid #e3cab1;
+  max-width: 300px;
 }
 
 .messageSent {
@@ -81,7 +84,7 @@
   padding: 10px;
   margin-bottom: 7px;
   border-radius: 15px 15px 0px 15px;
-  border: 2px solid #9dbc98;
+  border: 2px solid #b5997d;
   max-width: 200px;
 }
 
@@ -93,24 +96,25 @@
 }
 
 .messageInput input {
-  background-color: #f8f2e7;
+  background-color: #fff5eb;
+  font-family: 'Courier New', Courier, monospace;
   border: transparent;
   outline: 0;
   border-radius: 7px;
-  border: 2px solid #9dbc98;
+  border: 2px solid #e3cab1;
   font-size: large;
   min-width: 200px;
-  color: #638889;
-  padding: 4px;
+  color: #947456;
+  padding: 10px;
   flex: 1;
 }
 
 .messageInput button {
   padding: 10px;
   margin-left: 10px;
-  background-color: #4caf50;
-  color: #fff;
+  background-color: #947456;
+  color: #fff5eb;
   border: none;
-  border-radius: 5px;
+  border-radius: 20px;
   cursor: pointer;
 }

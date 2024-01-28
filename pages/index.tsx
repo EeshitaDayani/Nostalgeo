@@ -39,9 +39,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main className={styles.container}>
-        <div className={styles.title}>Nostalgeo</div>
+        <div className={styles.title}>nostalg<u>eo</u></div>
         <div className={styles.heading}>
-          Welcome, Shriya! <br /> Explore core memories from your past.
+        <br /><br />Welcome, Shriya! <br /> Explore core memories from your past.
         </div>
         <button className={styles.custombutton} onClick={handleCheckButton}>
           Discover Connections
@@ -49,9 +49,10 @@ export default function Home() {
         <div className={styles.result}>
           {buttonClicked && result ? (
             <div>
+              Connection found!
               <div
                 className={styles.resultText}
-              >{`Connection found! ${result.matchedUserName} shares a similar memory: ${result.matchedMemory}`}</div>
+              >{`${result.matchedUserName} shares a similar memory: ${result.matchedMemory}`}</div>
               <button
                 className={styles.custombutton}
                 onClick={() => Router.push("/chat")}
@@ -67,7 +68,7 @@ export default function Home() {
           ) : null}
         </div>
         <div className={styles.tableContainer}>
-          <div className={styles.memoryTitle}>Recorded Memories</div>
+          <div className={styles.memoryTitle}><br />Recorded Memories</div>
           <table className={styles.memoryTable}>
             <thead>
               <tr>

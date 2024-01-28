@@ -1,47 +1,54 @@
 .container {
   display: flex;
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: -1px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #F9EFDB; 
-  color: #638889;
+  background-color: #fff5eb; 
+  color: #916a51;
 }
 
 .title {
   text-align: center;
-  font-size: 50px;
+  letter-spacing: -1.25px;
+  font-size: 30px;
+  font-weight: bolder;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  color: #638889; 
+  margin-top: 35px;
+  color: #856242; 
   padding: 20px;
   z-index: 10; 
-  border-bottom: 1px solid #9DBC98;
 }
 
 .heading {
+  margin-top: 20px;
   text-align: center;
-  font-size: 40px; 
-  margin-bottom: 30px;
+  font-size: 25px; 
+  margin-bottom: 20px;
 }
 
 .custombutton {
   padding: 15px 30px; 
-  background-color: #F9EFDB; 
-  color: #638889; 
-  border: 2px solid #9DBC98;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #fff5eb; 
+  color: #947456;  
+  border: 1.75px solid #b59374;
   border-radius: 10px;
   cursor: pointer;
-  font-size: 18px; 
+  font-size: 18px;
+  font-weight: bolder;
   margin-bottom: 30px;
 }
 
 .result {
   text-align: center;
-  font-size: 30px;
-  margin-top: 20px;
+  font-size: 24px;
+  margin-top: 30px;
 }
 
 .resultText {
@@ -61,14 +68,24 @@
   border-collapse: collapse;
 }
 
-.memoryTable th, .memoryTable td {
-  border: 1px solid #ddd;
+.memoryTable td {
+  border: 1px solid #e3cab1;
   padding: 8px;
   text-align: center;
   font-size: larger;
 }
 
+.memoryTable th {
+  border: 1px solid #e3cab1;
+  color: #947456;
+  padding: 8px;
+  letter-spacing: 0px;
+  text-align: center;
+  font-size: larger;
+}
+
 .memoryTitle {
-  font-size: 2.2rem; /* Adjust as needed */
+  font-size: 25px; /* Adjust as needed */
   margin-bottom: 10px; /* Adjust as needed */
+  font-weight: 400;
 }
