@@ -22,8 +22,6 @@ export default function Home() {
     return user ? user.events : [];
   };
 
-  console.log(getUserMemories(currentUserId));
-
   return (
     <>
       <Head>
