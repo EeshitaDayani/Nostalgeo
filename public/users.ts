@@ -23,7 +23,7 @@ export const SampleData: UserData[] = [
         endYear: 1989,
       },
       {
-        description: "Participated in a UofTHacks 11",
+        description: "I was a hacker at UofTHacks 11",
         startYear: 2023,
         endYear: 2023,
       },

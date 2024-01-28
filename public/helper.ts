@@ -26,19 +26,37 @@ export function findMatches(
         for (const otherMemory of otherUser.events) {
           if (
             currentMemory.startYear <= otherMemory.endYear &&
-            currentMemory.endYear >= otherMemory.startYear &&
-            currentMemory.description === otherMemory.description
+            currentMemory.endYear >= otherMemory.startYear
           ) {
-            fetch(`http://localhost:8080/api/compareTexts?currentMemory=${currentMemory.description}&otherMemory=${otherMemory.description}`, {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-              },
-            })
+            fetch(
+              `http://localhost:8080/api/compareTexts?currentMemory=${currentMemory.description}&otherMemory=${otherMemory.description}`,
+              {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+              }
+            )
               .then((response) => response.json())
+              .then((data) => {
+                console.log(
+                  "This is the semantic similarity score",
+                  data.score
+                );
+                console.log("For these events:");
+                console.log("1.", currentMemory.description);
+                console.log("2.", otherMemory.description);
+                if (data.score > 65) {
+                  return {
+                    matchedUserName: otherUser.userName,
+                    matchedMemory: currentMemory.description,
+                  };
+                }
+              })
               .catch((error) => {
                 console.error("Error fetching data:", error);
               });
+
             return {
               matchedUserName: otherUser.userName,
               matchedMemory: currentMemory.description,
